@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% block content %}
+<!-- jumbotron -->
+<header id="home" class="top-hero jumbotron-fluid p-b-3 bg-faded">
+        <div class="container animated fadeInUp">
+            <h1 class="display-3">Excel Compare</h1>
+            <p class="lead m-t-1 m-b-2">Tool to compare 2 excel files!</p>
+            <a style = "text-decoration:none;" href="{{url_for('compare')}}"><button type="button" class="btn btn-danger m-t-1">Compare Files</button></a>
+        </div>
+    </header>
+{% endblock %}

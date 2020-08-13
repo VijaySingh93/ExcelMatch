@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block content %}
+<br>
+<br>
+<br>
+<hr>
+<br>
+<form method = "POST" enctype="multipart/form-data" action = "" style="height: 100vh;">
+   {{ form.hidden_tag()}}
+   <fieldset class="form-group">
+      <legend class="border-bottom" mb-4> </legend>
+      <div class="form-group">
+          <center>
+         {{form.file_path1(class="container form-control", placeholder="Enter Filepath1")}}</center>
+      </div>
+   </fieldset>
+   <fieldset class="form-group">
+      <legend class="border-bottom" mb-4> </legend>
+      <div class="form-group">
+          <center>
+         {{form.file_path2(class="container form-control", placeholder="Enter Filepath2")}}</center>
+      </div>
+   </fieldset>
+   <div class="form-group"> 
+         <center>{{form.submit(class="btn btn-outline-info btn-sm")}}</center>
+   </div>
+</form>
+{% endblock %}
+
